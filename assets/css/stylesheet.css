@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.section {
+  min-height: 100vh;
+  backdrop-filter: blur(400px);
+  position: relative;
+  /* background-image: linear-gradient(to bottom right, blue, #fff); */
+  overflow: hidden;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.header {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 56.4px;
+  text-align: center;
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.flex-grow {
+  flex-grow: 1;
+  background-color: rgba(20, 13, 27);
+
+}
+
+.card {
+  max-width: 367px;
+  min-height: 476px;
+  background-color: rgba(20, 18, 72);
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.card-border{
+  border: 1px solid rgba(18,25,210);
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: left;
+  padding-left: 30px;
+  color: #fff;
+}
+
+.para {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  padding-left: 30px;
+  color: #fff;
+}
+
+
+.custom-dots {
+  color: #fff;
+  display: flex;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+
+.custom-dots li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.custom-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 40px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+  background: #fff;
+  /* color: #fff; */
+  margin-top: 30px;
+}
+
+.custom-dots li.slick-active button {
+  background: blue;
+  /* color: #fff; */
+  border: none;
+  width: 70px;
+  height: 20px;
+  border-radius: 50px;
+}
+
+.blur-top {
+  width: 331px;
+  height: 331px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: rgba(27, 50, 165, 1);
+  filter: blur(100px);
+  top: 0%;
+  right: -20%;
+  z-index: -1;
+}
+
+.blur-bottom {
+  width: 331px;
+  height: 331px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: rgba(27, 50, 165, 1);
+  filter: blur(100px);
+  z-index: -1;
+  bottom: 0%;
+  left: -20%;
+}
+
+.star-1 {
+  position: absolute;
+  bottom: 5%;
+  left: -5%;
+}
+
+.star-2 {
+  position: absolute;
+  bottom: 12%;
+  left: -10%;
+}
+
+.star-3 {
+  position: absolute;
+  bottom: 20%;
+  left: -8%;
+}
+
+.star-4 {
+  position: absolute;
+  bottom: 13%;
+  left: -17%;
+}
