@@ -4,7 +4,6 @@
   min-height: 100vh;
   backdrop-filter: blur(400px);
   position: relative;
-  /* background-image: linear-gradient(to bottom right, blue, #fff); */
   overflow: hidden;
 }
 
@@ -34,11 +33,12 @@
   background-color: rgba(20, 18, 72);
   border-radius: 15px;
   overflow: hidden;
-  margin: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-.card-border{
-  border: 1px solid rgba(18,25,210);
+.card-border {
+  border: 1px solid rgba(18, 25, 210);
 }
 
 .heading {
@@ -84,13 +84,11 @@
   border: none;
   border-radius: 50px;
   background: #fff;
-  /* color: #fff; */
   margin-top: 30px;
 }
 
 .custom-dots li.slick-active button {
   background: blue;
-  /* color: #fff; */
   border: none;
   width: 70px;
   height: 20px;
@@ -143,4 +141,22 @@
   position: absolute;
   bottom: 13%;
   left: -17%;
+}
+
+@media (max-width:576px) {
+  .mb-sm-0 {
+    margin-bottom: 0;
+  }
+
+  .header {
+    font-size: 25px;
+  }
+
+  .card {
+    min-height: 300px;
+  }
+
+  img {
+    /* min-height: 50%; */
+  }
 }
