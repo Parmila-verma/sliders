@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+
 .section {
   min-height: 100vh;
   backdrop-filter: blur(400px);
@@ -17,14 +18,24 @@
   line-height: 56.4px;
   text-align: center;
   color: #fff;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  animation: header 10s infinite;
 }
 
+@keyframes header{
+  0%{
+    transform:scale(1,1);
+  }
+
+  50%{
+    transform: rotateY(360deg);
+  }
+ 
+}
 .flex-grow {
   flex-grow: 1;
   background-color: rgba(20, 13, 27);
-
 }
 
 .card {
@@ -35,10 +46,6 @@
   overflow: hidden;
   margin-left: 10px;
   margin-right: 10px;
-}
-
-.card-border {
-  border: 1px solid rgba(18, 25, 210);
 }
 
 .heading {
@@ -59,7 +66,6 @@
   color: #fff;
 }
 
-
 .custom-dots {
   color: #fff;
   display: flex;
@@ -76,15 +82,15 @@
 .custom-dots li button {
   font-size: 0;
   line-height: 0;
-  display: block;
-  width: 40px;
+  /* display: block; */
+  width: 40px;  
   height: 20px;
   padding: 5px;
   cursor: pointer;
   border: none;
   border-radius: 50px;
   background: #fff;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .custom-dots li.slick-active button {
@@ -105,6 +111,7 @@
   top: 0%;
   right: -20%;
   z-index: -1;
+  animation: mymove 5s infinite;
 }
 
 .blur-bottom {
@@ -117,7 +124,31 @@
   z-index: -1;
   bottom: 0%;
   left: -20%;
+  animation: mymove 5s infinite;
 }
+@keyframes mymove{
+  from{
+    background-color:  rgba(27, 50, 165, 1);
+  }
+  to{
+     background-color: rgb(44, 119, 205)
+  }
+}
+
+.animation-spin{
+animation: 5000ms  infinite linear spin;
+}
+
+@keyframes spin{
+
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(90deg);
+  }
+}
+
 
 .star-1 {
   position: absolute;
@@ -143,20 +174,35 @@
   left: -17%;
 }
 
-@media (max-width:576px) {
+/* 
+.card.slick-slide.slick-current.slick-active+div {
+  border: 1px solid rgba(18, 25, 210);
+} */
+
+@media (max-width:575.98px) {
   .mb-sm-0 {
     margin-bottom: 0;
   }
 
   .header {
     font-size: 25px;
+    padding: 0;
   }
 
   .card {
     min-height: 300px;
   }
 
-  img {
-    /* min-height: 50%; */
+}
+
+@media (max-width:768px) {
+  .card {
+    min-height: 380px;
+  }  
+}
+
+@media (min-width:992px) {
+  .card.slick-slide.slick-current.slick-active+div {
+    border: 1px solid rgba(18, 25, 210);
   }
 }
