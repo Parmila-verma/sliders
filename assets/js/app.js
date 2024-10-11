@@ -50,3 +50,43 @@ $(document).ready(function () {
   });
 });
 
+//section-1
+$(document).ready(function () {
+  $('.slider1').slick({
+    centerMode: true,
+    dots: true,
+    dotsClass: 'custom-dot',
+    infinite: true,
+    speed: 500,
+    //   slidesToShow: 1.65,
+    slidesToShow: 1.68,
+    slidesToScroll: 1,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          // arrows: false,
+          dotsClass: 'custom-dot',
+        }
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          // arrows: false,
+          dotsClass: 'custom-dot',
+        }
+      },
+    ]
+  });
+});
+
+
