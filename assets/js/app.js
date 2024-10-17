@@ -89,4 +89,40 @@ $(document).ready(function () {
   });
 });
 
+//section-2
+$(document).ready(function () {
+  $('.slider2').slick({
+    dots: true,
+    dotsClass: 'custom-left-dots',
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    prevArrow: '.slick-prev',
+    nextArrow: '.slick-next',
 
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          arrows:false,
+          dotsClass: 'custom-left-dots',
+        }
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          dotsClass: 'custom-left-dots',
+        }
+      },
+    ]
+  });
+});
