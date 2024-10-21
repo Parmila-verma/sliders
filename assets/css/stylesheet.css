@@ -44,13 +44,7 @@
   margin-right: 10px;
 }
 
-
 .header {
-  font-size: 48px;
-  font-weight: 400;
-  line-height: 56.4px;
-  text-align: center;
-  color: #fff;
   padding-top: 40px;
   padding-bottom: 40px;
   animation: header 10s infinite;
@@ -58,13 +52,8 @@
 
 .header-1 {
   font-family: "Plus Jakarta Sans";
-  font-size: 44px;
-  font-weight: 500;
   line-height: 55.44px;
-  text-align: center;
 }
-
-
 
 @keyframes header {
   0% {
@@ -91,14 +80,11 @@
   background-color: rgba(20, 18, 72);
   border-radius: 15px;
   overflow: hidden;
-  margin-left: 10px;
-  margin-right: 10px;
   margin-bottom: 20px;
 }
 
 .card-1 {
   background-color: rgba(2, 27, 49);
-  padding: 20px;
   border-radius: 20px;
   margin-bottom: 30px;
 }
@@ -108,12 +94,8 @@
 }
 
 .heading {
-  font-size: 24px;
   font-weight: 400;
   line-height: 36px;
-  text-align: left;
-  padding-left: 30px;
-  color: #fff;
 }
 
 .header-1 {
@@ -191,30 +173,25 @@
   border-radius: 50px;
 }
 
-.blur-top {
+.blur{
   width: 331px;
   height: 331px;
   border-radius: 50%;
   position: absolute;
   background-color: rgba(27, 50, 165, 1);
   filter: blur(100px);
-  top: 0%;
-  right: -20%;
   z-index: -1;
   animation: mymove 5s infinite;
 }
+.blur-top {
+  top: 0%;
+  right: -20%;
+}
 
 .blur-bottom {
-  width: 331px;
-  height: 331px;
-  border-radius: 50%;
-  position: absolute;
-  background-color: rgba(27, 50, 165, 1);
-  filter: blur(100px);
-  z-index: -1;
   bottom: 0%;
   left: -20%;
-  animation: mymove 5s infinite;
+
 }
 
 @keyframes mymove {
@@ -305,17 +282,15 @@
   color: rgba(11, 19, 42);
   font-family: "Rubik";
   font-size: 35px;
-  font-weight: 500;
   line-height: 50px;
-  text-align: center;
+
 }
 
 .sm-p {
   font-family: "Rubik";
   font-size: 16px;
-  font-weight: 400;
   line-height: 30px;
-  text-align: center;
+
 }
 
 .grey-heading {
@@ -351,34 +326,25 @@
 
 .name-heading {
   font-family: "Rubik";
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 30px;
-  /* text-align: center; */
+    line-height: 30px;
 }
 
 .sub-heading {
   font-family: "Rubik";
   font-size: 14px;
-  font-weight: 400;
   line-height: 30px;
 }
 
 .box-2 {
   border: 2px solid rgba(221, 221, 221);
-  padding: 20px;
   border-radius: 10px;
   margin-bottom: 50px;
-  /* max-width: 400px; */;
 }
 
 .p-about {
   font-family: "Rubik";
   font-size: 16px;
-  font-weight: 400;
   line-height: 30px;
-  text-align: left;
-
 }
 
 .custom-left-dots {
@@ -460,10 +426,19 @@
   padding-bottom: 20px;
 }
 
+.pd-20{
+  padding: 20px;
+}
 .pd-24 {
   padding: 24px;
 }
 
+.fw-400{
+  font-weight: 400;
+}
+.fw-500{
+  font-weight: 500;
+}
 .fw-600 {
   font-weight: 600;
 }
@@ -475,6 +450,9 @@
 .fs-48 {
   font-size: 48px;
   line-height: 72px;
+}
+.fs-44{
+  font-size: 44px;
 }
 
 .pd-left-40 {
@@ -537,8 +515,6 @@
   .accordion-body {
     max-width: 820px;
     font-family: "Poppins";
-    font-size: 18px;
-    font-weight: 400;
     line-height: 32.4px;
     padding: 10px 30px;
   }
