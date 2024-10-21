@@ -573,20 +573,21 @@
 }
 
 .section-4-bg-black {
-  background-color: rgb(50, 56, 58);
+  background-color: rgb(23, 25, 25);
 }
 
 .section-4 {
   background-image: url(../img/accordian-img.png);
   .accordion-button {
      box-shadow: none;
-    background-color: rgb(50, 56, 58);
+    background-color: rgb(23, 25, 25);
   }
 
 .accordion-item{
   border-radius: 6px;
   border: 3px solid rgb(84, 88, 88);
   box-shadow: none;
+  /* border-top-left-radius: 50%; */
 }
 
 
@@ -615,13 +616,17 @@
 
 .section-5{
   .container{
-    max-width: 800px !important;
+    max-width: 992px !important;
   }
   .accordion-item{
    background-color: rgba(12,12,12);
    margin-bottom: 24px;
    border:1px solid rgba(30,173,182);
-   border-radius: 0;
+   border-top-left-radius: 45px;
+   border-bottom-right-radius: 45px;
+   min-height: 93px;
+   max-width: 1078px;
+  
   }
 
   .accordion-button{
@@ -635,6 +640,21 @@
  .accordion-item:hover{
   box-shadow: rgba(30,173,182);
  }
+
+ img[Alt="loading"]
+ {
+  left: -1px;
+  top: -1px;
+  position: absolute;
+ }
+
+ img[Alt="loading-2"]
+ {
+  right: -1px;
+  bottom: -82px;
+  position: absolute;
+ }
+
 }
 
 @media (max-width:575.98px) {
@@ -649,6 +669,12 @@
 
   .card {
     min-height: 300px;
+  }
+  .rating{
+    padding-left: 2px;
+  }
+  .slick-prev{
+    display: none;
   }
 
 
