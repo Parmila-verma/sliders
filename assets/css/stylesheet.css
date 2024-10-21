@@ -11,6 +11,9 @@
 .Montserrat{
   font-family: "montserrat";
 }
+.w-100{
+  width: 100%;
+}
 
 .section {
   min-height: 100vh;
