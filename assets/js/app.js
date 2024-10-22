@@ -97,6 +97,7 @@ $(document).ready(function () {
     infinite: true,
     speed: 500,
     slidesToShow: 2,
+    arrows:true,
     slidesToScroll: 1,
     prevArrow: '.slick-prev',
     nextArrow: '.slick-next',
